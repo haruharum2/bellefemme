@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+.blog_page_inner {
+    text-align: center;
+    padding-top: 8%;
+}
+
+.blog_page_inner .font2 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: normal;
+    color:#000066;
+    border-bottom: 4px solid #fff;
+    line-height: 1.8;
+    display: inline;
+    margin: 0 auto;
+}
+
+.blog_page_wrapper {
+    margin: 0 8%;
+}
+
+.blog_page_wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+.blog_page_wrapper li a {
+    display: block;
+}
+
+.blog_page_wrapper li  {
+    width: 100%;
+}
+.blog_page_wrapper li {
+    padding: 8% 0;
+}
+
+.blog_page_wrapper li .font3  {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+
+.blog_page_wrapper img {
+    width: 100%;
+}
+
+.blog_page_undercontainer {
+    position: relative;
+}
+
+
+.blog_page_underpic img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+/* 「Life long Book」装飾 */
+
+#curve1,
+#curve2,
+#curve3 {
+    font-size: 2em;
+    font-family: ta-kobe, sans-serif;
+    color: #4400008c;
+    z-index: 2;
+}
+
+#curve1 {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+#curve2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+#curve3 {
+    position: absolute;
+    top: 35%;
+    left: 80%;
+}
+
+.contact_page_form_ttl2 {
+    width: 103%;
+}
+
+/* medium screen */
+
+@media (min-width: 768px) {
+
+    .blog_page_inner {
+        padding-top: 6%;
+    }
+
+    .blog_page_wrapper li  {
+        width: calc((95% -16px) /2);
+    }
+
+    .blog_page_wrapper li {
+        padding: 6% 0;
+    }
+
+    #curve1,
+    #curve2,
+    #curve3 {
+    font-size: 4em;
+}
+
+    #curve1 {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+    #curve3 {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+}
+
+@media(min-width: 1024px) {
+    .blog_page_wrapper li  {
+        width: calc((95% -32px) /3);
+    }
+
+    .blog_page_wrapper {
+        width: calc(95% - 32px);
+        margin: 0 auto;
+    }
+
+    .blog_page_underpic img {
+        height: 350px;
+    }
+
+}

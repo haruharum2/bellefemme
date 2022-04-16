@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+.font2_container {
+    text-align: center;
+}
+
+.contact_page_all .font2 {
+    font-size: 1.4em;
+    font-weight: normal;
+    color:#000066;
+    position: relative;
+    text-align: center;
+    border-bottom: 4px solid #fff;
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.contact_page_all {
+    background-image: url(../img/お問い合わせTOP.png);
+    background-size: cover;
+
+}
+
+
+.contact_page_all .inner {
+    position: relative;
+    padding: 8% 0 16%;
+}
+
+.contact_page_form {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+}
+
+.contact_page_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+.contact_page_box._area {
+    align-items: baseline;
+}
+
+.contact_page_form_box1,
+.contact_page_form_box2 {
+    height: 3em;
+    padding-left: 6px;
+    font-size: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    width: 100%;
+    margin: 2.5% 0;
+}
+
+.contact_page_txtarea {
+    width: 100%;
+    height: 12em;
+    padding: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    margin: 6% 0;
+}
+
+
+.contact_page_box {
+    display: grid;
+}
+
+
+.contact_page_form_ttl {
+    width: 100%;
+    height: 100%;
+    color: #473823;
+    font-size: 1em;
+    position: relative;
+}
+
+
+.contact_page_form_ttl2 {
+    color: #473823;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin: 12px 0 32px;
+    position: relative;
+}
+
+.contact_page_btn a {
+    color: #fff;
+    background: #3399FF;
+    display: block;
+    padding: 16px 0;
+    font-size: 1.3em;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.contact_page_all .fraze {
+    position: absolute;
+    bottom: 2%;
+    left:15%;
+    right: 0;
+    font-family: ta-kobe, sans-serif;
+    text-shadow: 2px 2px #3399ff79 ;
+    font-size: 3em;
+    transform: rotate(10deg);
+    color: #fff;
+}
+
+.must::after {
+    content:'必須';
+    background: #3399FF;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+.must2::after {
+    content:'必須';
+    background: #3399FF;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    width: 30%;
+    text-align: center;
+}
+
+@media(max-width: 344px) {
+    .contact_page_all .fraze {
+        font-size: 2em;
+        position: absolute;
+        bottom: 1%;
+        left: 25%;
+        right: 0;
+    }
+}
+
+/* medium screen */
+@media(min-width: 768px) {
+
+    body {
+        font-size: 20px;
+    }
+    .contact_page_all .font2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact_page_wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 6%;
+    }
+
+    .contact_page_box {
+        display: flex;
+    }
+
+    .contact_page_box3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact_page_all .fraze {
+        font-size: 6em;
+        position: absolute;
+        bottom: 2%;
+        left:25%;
+        right: 0;
+    }
+
+    .must::after,
+    .must2::after {
+        display: none;
+    }
+
+    .must::before {
+        position: absolute;
+        left: -20%;
+        content:'必須';
+        background: #3399FF;
+        color: #fff;
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .must2::before {
+        position: absolute;
+        left: -20%;
+        content:'必須';
+        background: #3399FF;
+        color: #fff;
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .contact_page_form_ttl,
+    .contact_page_form_ttl2 {
+        width: 80%;
+    }
+}
